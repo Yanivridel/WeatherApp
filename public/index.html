@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="bezel">
+            <div class="phone-screen">
+                <div class="status-bar">
+                    <span class="time"></span>
+                    <div class="icons">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-three-quarters"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-gear"></i>
+                <div class="city-container">
+                    <h1 id="city">New York</h1>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="hover-zone hover-zone-city"></div>
+                    <ul class="select-city"></ul>
+                </div>
+                <div id="weather-img"></div>
+                <div class="details-container">
+                    <div class="today flex space-between align-end">
+                        <div class="flex align-end gap-10">
+                            <h1 class="temperature">22°</h1>
+                            <p class="description">Sunny</p>
+                        </div>
+                        <p class="day-night-temp">22°/14°</p>
+                    </div>
+                    <div class="tomorrow flex space-between">
+                        <div class="flex align-center">
+                            <div class="daily-img"></div>
+                            <p class="day">Tomorrow</p>
+                        </div>
+                        <p class="day-night-temp">27°/11°</p>
+                    </div>
+                    <div class="two-days flex space-between">
+                        <div class="flex align-center">
+                            <div class="daily-img"></div>
+                            <p class="day">Monday</p>
+                        </div>
+                        <p class="day-night-temp">24°/24°</p>
+                    </div>
+                    <div class="three-days flex space-between">
+                        <div class="flex align-center">
+                            <div class="daily-img"></div>
+                            <p class="day">Thursday</p>
+                        </div>
+                        <p class="day-night-temp">32°/12°</p>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="msg-popup">
+                <i class="fa-solid fa-xmark"></i>
+                <h1>Settings</h1>
+                <div class="measure-container">
+                    <h2 id="measure">Celsius</h2>
+                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                    <div class="hover-zone hover-zone-measure"></div>
+                    <ul class="select-measure">
+                        <li class="list-item">Celsius</li>
+                        <li class="list-item">Fahrenheit</li>
+                        <li class="list-item">Kelvin</li>
+                    </ul>
+                </div>
+                <div class="notification-container">
+                    <h2>Notification</h2>
+                    <div>
+                        <input type="checkbox" id="dailyWeather" name="dailyWeather" value="daily">
+                        <label for="dailyWeather">Send daily weather updates</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="weeklySummary" name="weeklySummary" value="weekly">
+                        <label for="weeklySummary">Send weekly weather summary</label><br>
+                        
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rainAlert" name="rainAlert" value="rain">
+                        <label for="rainAlert">Alert for upcoming rain</label><br>
+                        
+                    </div>
+                    <div>
+                        <input type="checkbox" id="severeWeather" name="severeWeather" value="severe">
+                        <label for="severeWeather">Severe weather alerts (storms, etc.)</label><br>
+                        
+                    </div>
+                    <div>
+                        <h4>Preferred Notification Time</h4>
+                        <label for="notificationTime">Select time for daily updates:</label>
+                        <input type="time" id="notificationTime" name="notificationTime" value="08:00"><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="notch"></div>
+            <div class="camera-cutout"></div>
+            <div class="swiper"></div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
