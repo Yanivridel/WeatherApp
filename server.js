@@ -1,5 +1,5 @@
 // FOR LOCAL ONLY
-require('dotenv').config();
+// require('dotenv').config();
 //
 
 const express = require('express');
@@ -20,7 +20,7 @@ app.get('/api/key', (req, res) => {
 });
 
 // FOR LOCAL ONLY
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`); 
-});
+// app.listen(PORT, () => {
+//     console.log(`Server is running on http://localhost:${PORT}`); 
+// });
 //
