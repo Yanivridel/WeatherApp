@@ -1,4 +1,4 @@
-# WeatherApp 🌦️
+# [WeatherApp 🌦️](https://weather-l5rp5o591-yanivs-projects-d091535c.vercel.app/)
 
 A simple weather application that allows users to check the weather in cities worldwide, switch between different temperature units, and customize notification settings for daily forecasts, weekly forecasts, upcoming rain alerts, severe weather notifications (like storms), and scheduled notifications. This project uses the [OpenWeather API](https://openweathermap.org/) to fetch real-time weather data.
 
